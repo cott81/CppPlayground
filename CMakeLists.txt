@@ -26,4 +26,5 @@ set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO} -O3")
 #add test project
 add_subdirectory(HelloWorld)
 add_subdirectory(Inheritance)
+add_subdirectory(Templates)
                     
