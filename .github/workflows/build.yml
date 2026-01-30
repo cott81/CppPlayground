@@ -1,0 +1,22 @@
+name: Test Workflow
+
+on:
+  pull_request:
+    types: [opened, synchronize] # Types added to keep PR status on built pages up to date
+  push:
+    branches:
+      - develop
+  workflow_dispatch:
+
+jobs:
+
+  test:
+    runs-on: [ubuntu-latest]
+
+    steps:
+
+      - name: Test cmd
+        run: ls -al
+        shell: bash
+
+  
